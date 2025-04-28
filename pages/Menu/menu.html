@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header>
+    <h1>The <span>Leaf<i class="fa-solid fa-leaf"></i></span></h1>
+    <input placeholder="Search here...">
+    <a href="cart/cart.html">
+      <div>
+        <i class="fa-solid fa-cart-shopping" id="totalCart"></i>
+      </div>
+    </a>
+    
+  </header>
+
+  <section class="menu">
+    <div class="dish">
+      <img src="Paneer butter masala.jpg" alt="Dish 1">
+      <h3>Paneer Butter Masala</h3>
+      <p>₹220</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="chicken biryani.jpg" alt="Dish 2">
+      <h3>Chicken Biryani</h3>
+      <p>₹250</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="masala dosa.jpg" alt="Dish 3">
+      <h3>Masala Dosa</h3>
+      <p>₹120</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="Veg Pulao.jpeg" alt="Dish 4">
+      <h3>Veg Pulao</h3>
+      <p>₹150</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="Butter Naan.jpg" alt="Dish 5">
+      <h3>Butter Naan</h3>
+      <p>₹40</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="Momos.jpg" alt="Dish 6">
+      <h3>Momos</h3>
+      <p>₹100</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="Veg Thali.jpg" alt="Dish 7">
+      <h3>Veg Thali</h3>
+      <p>₹180</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="Spring Rolls.jpg" alt="Dish 8">
+      <h3>Spring Rolls</h3>
+      <p>₹220</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="Chole Bhature.jpg" alt="Dish 9">
+      <h3>Chole Bhature</h3>
+      <p>₹140</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="Cold Coffee.jpg" alt="Dish 10">
+      <h3>Cold Coffee</h3>
+      <p>₹90</p>
+      <button class="details_btn">View Details</button>
+      <button onclick="cartText()" class="cart_btn">Add to Cart</button>
+    </div>
+  </section>
+
+  <script src="menu.js"></script>
+
+</body>
+</html>

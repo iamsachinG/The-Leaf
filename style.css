@@ -1,0 +1,434 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: #1DB954
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+header {
+    position: sticky;
+    top: 0; /* Sticks the navbar to the top of the viewport */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+    background-color: rgb(0, 0, 0); /* Retain the background color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+span {
+    color: var(--maincolor);
+}
+
+header input {
+    border-radius: 3rem;
+    width: 20vw;
+    text-align: center;
+    border: none;
+    background-color: white;
+}
+
+header #navlist {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+header #navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+    &:hover{
+        color: var(--maincolor);
+        font-weight: bolder;
+        text-decoration-line: underline;
+    }
+}
+
+
+main {
+    display: flex;
+    margin: 3rem;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    /* flex: 1; */
+}
+
+
+main #main_content h2 span {
+    color: var(--maincolor);
+}
+
+.slider {
+    width: 50vw;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 1.9s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Specials_items #item-1 img,
+#Specials_items #item-2 img,
+#Specials_items #item-3 img,
+#Specials_items #item-4 img,
+#Specials_items #item-5 img,
+#Specials_items #item-6 img {
+    width: 40vw;
+    height: 50vh;
+    margin-top: 2rem;
+    object-fit: cover;
+}
+
+#Specials_items #item-1,
+#Specials_items #item-2,
+#Specials_items #item-3,
+#Specials_items #item-4,
+#Specials_items #item-5,
+#Specials_items #item-6 {
+    width: 40vw;
+    height: 50vh;
+    margin-top: 2rem;
+}
+
+#Specials_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    margin-inline: 10%;
+}
+
+#Specials_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+#services #service_name {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#four_services {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    text-align: center;
+}
+
+#four_services #service_1 img,
+#four_services #service_2 img,
+#four_services #service_3 img,
+#four_services #service_4 img {
+    width: 10vw;
+    border: var(--maincolor);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback {
+    margin-top: 5%;
+}
+
+#feedback_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#feedbacks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10rem;
+    margin-top: 10vh;
+    width: 95%;
+    margin-inline: auto;
+    height: 100vh;
+}
+
+#feedback_1,
+#feedback_2,
+#feedback_3,
+#feedback_4,
+#feedback_5,
+#feedback_6 {
+    background-color: white;
+    color: black;
+    box-shadow: 0.1rem 5px 1rem 5px gray;
+    border-radius: 2rem;
+    border: white;
+    align-items: center;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#feedback_profile {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+footer #meta_media li {
+    list-style-type: none;
+}
+
+#meta_media ul {
+    display: flex;
+    gap: 2rem;
+}
+
+#meta_media ul #facebook {
+    color: #1877F2;
+}
+
+#meta_media ul #instagram {
+    color: #d62976;
+}
+
+#meta_media ul #threads {
+    color: white;
+}
+
+#meta_media ul #x {
+    color: white;
+}
+
+#meta_media ul #whatsapp {
+    color: #25D366;
+}
+
+#suggestions {
+    position: absolute;
+    background-color: white;
+    width: 20vw;
+    margin-right: 13rem;
+    margin-top: 3rem;
+    height: 75%;
+    z-index: 9999;
+    border: 0.2rem solid var(--maincolor);
+    display: none;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.suggestion-item:hover {
+    color: black;
+    background-color: var(--maincolor);
+}
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header input {
+        width: 80%;
+    }
+
+    #Specials_items {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 1.5rem;
+        margin-inline: 5%;
+    }
+
+    #Specials_items #item-1,
+    #Specials_items #item-2,
+    #Specials_items #item-3,
+    #Specials_items #item-4,
+    #Specials_items #item-5,
+    #Specials_items #item-6 {
+        width: 45%; /* Adjust width for tablets */
+    }
+
+    #four_services {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #four_services #service_1 img,
+    #four_services #service_2 img,
+    #four_services #service_3 img,
+    #four_services #service_4 img {
+        width: 20vw;
+    }
+
+    #feedbacks {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        margin-bottom: 5rem; /* Add space at the bottom */
+    }
+
+    footer {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    #suggestions {
+        width: 90%;
+        margin-right: 0;
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        display: flex;
+    }
+
+    header input {
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        gap: 2rem;
+    }
+
+    main .slider {
+        width: 90vw;
+        height: 50vh;
+    }
+    
+    main .slider .slide {
+        min-width: 100%;
+        height: 50vh;
+    }
+
+    #Specials_items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        gap: 1rem;
+        margin-inline: 5%;
+    }
+
+    #Specials_items #item-1,
+    #Specials_items #item-2,
+    #Specials_items #item-3,
+    #Specials_items #item-4,
+    #Specials_items #item-5,
+    #Specials_items #item-6 {
+        width: 100%; /* Full width for mobile */
+        height: 30vh; /* Adjust height for mobile */
+        margin-top: 0; /* Remove top margin for mobile */
+    }
+
+    #Specials_items #item-1 img,
+    #Specials_items #item-2 img,
+    #Specials_items #item-3 img,
+    #Specials_items #item-4 img,
+    #Specials_items #item-5 img,
+    #Specials_items #item-6 img {
+        width: 100%; /* Full width for mobile */
+        height: 30vh; /* Adjust height for mobile */
+        object-fit: cover; /* Maintain aspect ratio */
+        
+    }
+
+    #four_services #service_1 img,
+    #four_services #service_2 img,
+    #four_services #service_3 img,
+    #four_services #service_4 img {
+        width: 30vw;
+    }
+
+    #feedbacks {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 5rem; /* Add space at the bottom */
+    }
+
+    footer {
+        position: relative;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #suggestions {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+

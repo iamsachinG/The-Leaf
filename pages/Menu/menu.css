@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+* span {
+    color: #27ae60;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding-top: 80px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 0.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header input {
+    padding: 0.8rem;
+    border-radius: 2rem;
+    width: 30vw;
+    text-align: center;
+    position: sticky;
+}
+
+header #totalCart {
+    font-size: 2rem;
+}
+
+header #totalCart:hover {
+    text-shadow: 
+    0 0 5px #27ae60,
+    0 0 15px #27ae60,
+    0 0 30px #27ae60,
+    0 0 45px #27ae60;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.dish {
+    background: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* transition: transform 0.2s ease; */
+}
+
+.dish img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    /* or 16 / 9 or 1 / 1 (square) */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dish h3 {
+    margin: 10px 0 5px;
+}
+
+.dish p {
+    margin: 5px 0;
+}
+
+.dish button {
+    padding: 8px 1rem;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.5rem 0 0.5rem;
+    margin-top: 10px;
+}
+
+.dish button:hover {
+    background-color: #219150;
+}
+
+.dish .details_btn {
+    background-color: black;
+}
+
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
