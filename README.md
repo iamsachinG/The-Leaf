@@ -17,10 +17,15 @@ JavaScript (Vanilla JS)
 📁 Project Structure
 
 📦 The-Leaf
+
  ┣ 📂 images
+ 
  ┣ 📂 pages
+ 
  ┣ 📜 index.html
+ 
  ┣ 📜 style.css
+ 
  ┣ 📜 main.js
 
  🎯 Purpose of Project
